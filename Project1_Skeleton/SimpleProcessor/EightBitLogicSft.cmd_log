@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/cmkli/OneDrive/Desktop/Project1_Skeleton/SimpleProcessor/EightBitLogicSft.xst" -ofn "C:/Users/cmkli/OneDrive/Desktop/Project1_Skeleton/SimpleProcessor/EightBitLogicSft.syr" 
+xst -intstyle ise -ifn "C:/Users/cmkli/OneDrive/Desktop/Project1_Skeleton/SimpleProcessor/EightBitLogicSft.xst" -ofn "C:/Users/cmkli/OneDrive/Desktop/Project1_Skeleton/SimpleProcessor/EightBitLogicSft.syr" 
+xst -intstyle ise -ifn "C:/Users/cmkli/OneDrive/Desktop/Project1_Skeleton/SimpleProcessor/EightBitLogicSft.xst" -ofn "C:/Users/cmkli/OneDrive/Desktop/Project1_Skeleton/SimpleProcessor/EightBitLogicSft.syr" 
+sch2sym -intstyle ise -family spartan6 -w -refsym EightBitLogicSft C:/Users/cmkli/OneDrive/Desktop/Project1_Skeleton/SimpleProcessor/EightBitLogicSft.sch C:/Users/cmkli/OneDrive/Desktop/Project1_Skeleton/SimpleProcessor/EightBitLogicSft.sym 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 EightBitLogicSft.ngc EightBitLogicSft.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o EightBitLogicSft_map.ncd EightBitLogicSft.ngd EightBitLogicSft.pcf 
