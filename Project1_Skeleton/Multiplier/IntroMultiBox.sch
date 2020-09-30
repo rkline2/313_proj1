@@ -255,8 +255,7 @@
         <instance x="2736" y="736" name="XLXI_10" orien="R90" />
         <branch name="B0">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2656" y="720" type="branch" />
-            <wire x2="2656" y1="672" y2="704" x1="2656" />
-            <wire x2="2656" y1="704" y2="720" x1="2656" />
+            <wire x2="2656" y1="672" y2="720" x1="2656" />
             <wire x2="2656" y1="720" y2="736" x1="2656" />
         </branch>
         <instance x="2592" y="736" name="XLXI_3" orien="R90" />
@@ -365,8 +364,7 @@
         <instance x="1264" y="736" name="XLXI_19" orien="R90" />
         <branch name="A6">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1232" y="720" type="branch" />
-            <wire x2="1232" y1="672" y2="688" x1="1232" />
-            <wire x2="1232" y1="688" y2="720" x1="1232" />
+            <wire x2="1232" y1="672" y2="720" x1="1232" />
             <wire x2="1232" y1="720" y2="736" x1="1232" />
         </branch>
         <branch name="B0">
@@ -377,14 +375,12 @@
         <instance x="1104" y="736" name="XLXI_20" orien="R90" />
         <branch name="B1">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1008" y="720" type="branch" />
-            <wire x2="1008" y1="672" y2="704" x1="1008" />
-            <wire x2="1008" y1="704" y2="720" x1="1008" />
+            <wire x2="1008" y1="672" y2="720" x1="1008" />
             <wire x2="1008" y1="720" y2="736" x1="1008" />
         </branch>
         <branch name="A6">
             <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1072" y="720" type="branch" />
-            <wire x2="1072" y1="672" y2="704" x1="1072" />
-            <wire x2="1072" y1="704" y2="720" x1="1072" />
+            <wire x2="1072" y1="672" y2="720" x1="1072" />
             <wire x2="1072" y1="720" y2="736" x1="1072" />
         </branch>
         <instance x="944" y="736" name="XLXI_21" orien="R90" />
@@ -599,15 +595,47 @@
         <iomarker fontsize="28" x="1888" y="1776" name="S2" orien="R90" />
         <iomarker fontsize="28" x="2224" y="1792" name="S1" orien="R90" />
         <iomarker fontsize="28" x="2544" y="1792" name="S0" orien="R90" />
-        <iomarker fontsize="28" x="3008" y="672" name="A0" orien="R270" />
-        <iomarker fontsize="28" x="2720" y="672" name="A1" orien="R270" />
-        <iomarker fontsize="28" x="2416" y="672" name="A2" orien="R270" />
-        <iomarker fontsize="28" x="2112" y="672" name="A3" orien="R270" />
-        <iomarker fontsize="28" x="1824" y="672" name="A4" orien="R270" />
-        <iomarker fontsize="28" x="1536" y="672" name="A5" orien="R270" />
-        <iomarker fontsize="28" x="1232" y="672" name="A6" orien="R270" />
-        <iomarker fontsize="28" x="944" y="672" name="A7" orien="R270" />
-        <iomarker fontsize="28" x="880" y="672" name="B0" orien="R270" />
-        <iomarker fontsize="28" x="736" y="672" name="B1" orien="R270" />
+        <branch name="B1">
+            <wire x2="1360" y1="320" y2="400" x1="1360" />
+            <wire x2="1360" y1="400" y2="432" x1="1360" />
+        </branch>
+        <iomarker fontsize="28" x="1360" y="320" name="B1" orien="R270" />
+        <branch name="B0">
+            <wire x2="1472" y1="320" y2="400" x1="1472" />
+            <wire x2="1472" y1="400" y2="432" x1="1472" />
+        </branch>
+        <iomarker fontsize="28" x="1472" y="320" name="B0" orien="R270" />
+        <branch name="A0">
+            <wire x2="3008" y1="384" y2="464" x1="3008" />
+        </branch>
+        <branch name="A1">
+            <wire x2="2912" y1="384" y2="464" x1="2912" />
+        </branch>
+        <branch name="A2">
+            <wire x2="2816" y1="384" y2="464" x1="2816" />
+        </branch>
+        <branch name="A3">
+            <wire x2="2736" y1="384" y2="464" x1="2736" />
+        </branch>
+        <branch name="A4">
+            <wire x2="2656" y1="384" y2="464" x1="2656" />
+        </branch>
+        <branch name="A5">
+            <wire x2="2576" y1="384" y2="464" x1="2576" />
+        </branch>
+        <branch name="A6">
+            <wire x2="2496" y1="384" y2="464" x1="2496" />
+        </branch>
+        <branch name="A7">
+            <wire x2="2416" y1="384" y2="464" x1="2416" />
+        </branch>
+        <iomarker fontsize="28" x="3008" y="384" name="A0" orien="R270" />
+        <iomarker fontsize="28" x="2912" y="384" name="A1" orien="R270" />
+        <iomarker fontsize="28" x="2816" y="384" name="A2" orien="R270" />
+        <iomarker fontsize="28" x="2736" y="384" name="A3" orien="R270" />
+        <iomarker fontsize="28" x="2656" y="384" name="A4" orien="R270" />
+        <iomarker fontsize="28" x="2576" y="384" name="A5" orien="R270" />
+        <iomarker fontsize="28" x="2496" y="384" name="A6" orien="R270" />
+        <iomarker fontsize="28" x="2416" y="384" name="A7" orien="R270" />
     </sheet>
 </drawing>
