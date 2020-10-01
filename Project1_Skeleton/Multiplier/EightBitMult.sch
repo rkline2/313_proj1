@@ -6,7 +6,6 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="A(0:7)" />
         <signal name="A(0)" />
         <signal name="A(2)" />
         <signal name="A(3)" />
@@ -15,9 +14,6 @@
         <signal name="A(1)" />
         <signal name="A(7)" />
         <signal name="A(6)" />
-        <signal name="B(2)" />
-        <signal name="B(3)" />
-        <signal name="Z(0:15)" />
         <signal name="B(0)" />
         <signal name="B(1)" />
         <signal name="Z(0)" />
@@ -32,7 +28,6 @@
         <signal name="XLXN_20" />
         <signal name="Z(2)" />
         <signal name="CO0" />
-        <signal name="CO1" />
         <signal name="S0" />
         <signal name="S1" />
         <signal name="S2" />
@@ -47,7 +42,6 @@
         <signal name="S11" />
         <signal name="S12" />
         <signal name="S13" />
-        <signal name="B(5)" />
         <signal name="S14" />
         <signal name="S15" />
         <signal name="S16" />
@@ -55,7 +49,6 @@
         <signal name="S18" />
         <signal name="S19" />
         <signal name="S20" />
-        <signal name="B(6)" />
         <signal name="S21" />
         <signal name="S22" />
         <signal name="S23" />
@@ -63,7 +56,6 @@
         <signal name="S25" />
         <signal name="S26" />
         <signal name="S27" />
-        <signal name="B(7)" />
         <signal name="S28" />
         <signal name="S29" />
         <signal name="S30" />
@@ -71,8 +63,6 @@
         <signal name="S32" />
         <signal name="S33" />
         <signal name="S34" />
-        <signal name="B(0:7)" />
-        <signal name="B(4)" />
         <signal name="Z(8)" />
         <signal name="Z(9)" />
         <signal name="Z(10)" />
@@ -85,18 +75,26 @@
         <signal name="CO4" />
         <signal name="Z(15)" />
         <signal name="Z(3)" />
-        <signal name="XLXN_255" />
+        <signal name="Z(4)" />
         <signal name="Z(5)" />
         <signal name="Z(6)" />
         <signal name="Z(7)" />
-        <signal name="XLXN_270" />
-        <signal name="XLXN_271" />
-        <port polarity="Input" name="A(0:7)" />
-        <port polarity="Output" name="Z(0:15)" />
-        <port polarity="Output" name="B(0:7)" />
+        <signal name="B(2)" />
+        <signal name="B(3)" />
+        <signal name="B(4)" />
+        <signal name="XLXN_27" />
+        <signal name="B(5)" />
+        <signal name="B(6)" />
+        <signal name="B(7)" />
+        <signal name="A(7:0)" />
+        <signal name="B(7:0)" />
+        <signal name="Z(15:0)" />
+        <port polarity="Input" name="A(7:0)" />
+        <port polarity="Input" name="B(7:0)" />
+        <port polarity="Output" name="Z(15:0)" />
         <blockdef name="MultBox">
-            <timestamp>2020-9-28T5:55:8</timestamp>
-            <rect width="256" x="64" y="-1024" height="1024" />
+            <timestamp>2020-9-30T22:1:57</timestamp>
+            <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-992" y2="-992" x1="64" />
             <line x2="0" y1="-928" y2="-928" x1="64" />
             <line x2="0" y1="-864" y2="-864" x1="64" />
@@ -122,10 +120,10 @@
             <line x2="384" y1="-416" y2="-416" x1="320" />
             <line x2="384" y1="-320" y2="-320" x1="320" />
             <line x2="384" y1="-224" y2="-224" x1="320" />
-            <line x2="384" y1="-128" y2="-128" x1="320" />
+            <rect width="256" x="64" y="-1024" height="1088" />
         </blockdef>
         <blockdef name="IntroMultiBox">
-            <timestamp>2020-9-28T17:14:47</timestamp>
+            <timestamp>2020-9-30T22:2:5</timestamp>
             <line x2="384" y1="96" y2="96" x1="320" />
             <line x2="384" y1="160" y2="160" x1="320" />
             <line x2="384" y1="224" y2="224" x1="320" />
@@ -165,6 +163,7 @@
             <blockpin signalname="XLXN_19" name="FA4" />
             <blockpin signalname="XLXN_20" name="FA5" />
             <blockpin signalname="XLXN_13" name="FA6" />
+            <blockpin signalname="B(2)" name="Bin" />
             <blockpin signalname="CO0" name="CO8" />
             <blockpin signalname="S6" name="S6" />
             <blockpin signalname="S5" name="S5" />
@@ -174,7 +173,6 @@
             <blockpin signalname="S1" name="S1" />
             <blockpin signalname="S0" name="S0" />
             <blockpin signalname="Z(2)" name="Z" />
-            <blockpin signalname="B(2)" name="B" />
         </block>
         <block symbolname="MultBox" name="XLXI_118">
             <blockpin signalname="A(0)" name="A0" />
@@ -193,7 +191,8 @@
             <blockpin signalname="S5" name="FA4" />
             <blockpin signalname="S6" name="FA5" />
             <blockpin signalname="CO0" name="FA6" />
-            <blockpin signalname="CO1" name="CO8" />
+            <blockpin signalname="B(3)" name="Bin" />
+            <blockpin signalname="XLXN_27" name="CO8" />
             <blockpin signalname="S13" name="S6" />
             <blockpin signalname="S12" name="S5" />
             <blockpin signalname="S11" name="S4" />
@@ -202,9 +201,120 @@
             <blockpin signalname="S8" name="S1" />
             <blockpin signalname="S7" name="S0" />
             <blockpin signalname="Z(3)" name="Z" />
-            <blockpin signalname="B(3)" name="B" />
         </block>
-        <block symbolname="IntroMultiBox" name="XLXI_157">
+        <block symbolname="MultBox" name="XLXI_154">
+            <blockpin signalname="A(0)" name="A0" />
+            <blockpin signalname="A(1)" name="A1" />
+            <blockpin signalname="A(2)" name="A2" />
+            <blockpin signalname="A(3)" name="A3" />
+            <blockpin signalname="A(4)" name="A4" />
+            <blockpin signalname="A(5)" name="A5" />
+            <blockpin signalname="A(6)" name="A6" />
+            <blockpin signalname="A(7)" name="A7" />
+            <blockpin signalname="S7" name="HA0" />
+            <blockpin signalname="S8" name="FA0" />
+            <blockpin signalname="S9" name="FA1" />
+            <blockpin signalname="S10" name="FA2" />
+            <blockpin signalname="S11" name="FA3" />
+            <blockpin signalname="S12" name="FA4" />
+            <blockpin signalname="S13" name="FA5" />
+            <blockpin signalname="XLXN_27" name="FA6" />
+            <blockpin signalname="B(4)" name="Bin" />
+            <blockpin signalname="CO2" name="CO8" />
+            <blockpin signalname="S20" name="S6" />
+            <blockpin signalname="S19" name="S5" />
+            <blockpin signalname="S18" name="S4" />
+            <blockpin signalname="S17" name="S3" />
+            <blockpin signalname="S16" name="S2" />
+            <blockpin signalname="S15" name="S1" />
+            <blockpin signalname="S14" name="S0" />
+            <blockpin signalname="Z(4)" name="Z" />
+        </block>
+        <block symbolname="MultBox" name="XLXI_155">
+            <blockpin signalname="A(0)" name="A0" />
+            <blockpin signalname="A(1)" name="A1" />
+            <blockpin signalname="A(2)" name="A2" />
+            <blockpin signalname="A(3)" name="A3" />
+            <blockpin signalname="A(4)" name="A4" />
+            <blockpin signalname="A(5)" name="A5" />
+            <blockpin signalname="A(6)" name="A6" />
+            <blockpin signalname="A(7)" name="A7" />
+            <blockpin signalname="S14" name="HA0" />
+            <blockpin signalname="S15" name="FA0" />
+            <blockpin signalname="S16" name="FA1" />
+            <blockpin signalname="S17" name="FA2" />
+            <blockpin signalname="S18" name="FA3" />
+            <blockpin signalname="S19" name="FA4" />
+            <blockpin signalname="S20" name="FA5" />
+            <blockpin signalname="CO2" name="FA6" />
+            <blockpin signalname="B(5)" name="Bin" />
+            <blockpin signalname="CO3" name="CO8" />
+            <blockpin signalname="S27" name="S6" />
+            <blockpin signalname="S26" name="S5" />
+            <blockpin signalname="S25" name="S4" />
+            <blockpin signalname="S24" name="S3" />
+            <blockpin signalname="S23" name="S2" />
+            <blockpin signalname="S22" name="S1" />
+            <blockpin signalname="S21" name="S0" />
+            <blockpin signalname="Z(5)" name="Z" />
+        </block>
+        <block symbolname="MultBox" name="XLXI_156">
+            <blockpin signalname="A(0)" name="A0" />
+            <blockpin signalname="A(1)" name="A1" />
+            <blockpin signalname="A(2)" name="A2" />
+            <blockpin signalname="A(3)" name="A3" />
+            <blockpin signalname="A(4)" name="A4" />
+            <blockpin signalname="A(5)" name="A5" />
+            <blockpin signalname="A(6)" name="A6" />
+            <blockpin signalname="A(7)" name="A7" />
+            <blockpin signalname="S21" name="HA0" />
+            <blockpin signalname="S22" name="FA0" />
+            <blockpin signalname="S23" name="FA1" />
+            <blockpin signalname="S24" name="FA2" />
+            <blockpin signalname="S25" name="FA3" />
+            <blockpin signalname="S26" name="FA4" />
+            <blockpin signalname="S27" name="FA5" />
+            <blockpin signalname="CO3" name="FA6" />
+            <blockpin signalname="B(6)" name="Bin" />
+            <blockpin signalname="CO4" name="CO8" />
+            <blockpin signalname="S34" name="S6" />
+            <blockpin signalname="S33" name="S5" />
+            <blockpin signalname="S32" name="S4" />
+            <blockpin signalname="S31" name="S3" />
+            <blockpin signalname="S30" name="S2" />
+            <blockpin signalname="S29" name="S1" />
+            <blockpin signalname="S28" name="S0" />
+            <blockpin signalname="Z(6)" name="Z" />
+        </block>
+        <block symbolname="MultBox" name="XLXI_119">
+            <blockpin signalname="A(0)" name="A0" />
+            <blockpin signalname="A(1)" name="A1" />
+            <blockpin signalname="A(2)" name="A2" />
+            <blockpin signalname="A(3)" name="A3" />
+            <blockpin signalname="A(4)" name="A4" />
+            <blockpin signalname="A(5)" name="A5" />
+            <blockpin signalname="A(6)" name="A6" />
+            <blockpin signalname="A(7)" name="A7" />
+            <blockpin signalname="S28" name="HA0" />
+            <blockpin signalname="S29" name="FA0" />
+            <blockpin signalname="S30" name="FA1" />
+            <blockpin signalname="S31" name="FA2" />
+            <blockpin signalname="S32" name="FA3" />
+            <blockpin signalname="S33" name="FA4" />
+            <blockpin signalname="S34" name="FA5" />
+            <blockpin signalname="CO4" name="FA6" />
+            <blockpin signalname="B(7)" name="Bin" />
+            <blockpin signalname="Z(15)" name="CO8" />
+            <blockpin signalname="Z(14)" name="S6" />
+            <blockpin signalname="Z(13)" name="S5" />
+            <blockpin signalname="Z(12)" name="S4" />
+            <blockpin signalname="Z(11)" name="S3" />
+            <blockpin signalname="Z(10)" name="S2" />
+            <blockpin signalname="Z(9)" name="S1" />
+            <blockpin signalname="Z(8)" name="S0" />
+            <blockpin signalname="Z(7)" name="Z" />
+        </block>
+        <block symbolname="IntroMultiBox" name="XLXI_158">
             <blockpin signalname="A(0)" name="A0" />
             <blockpin signalname="B(0)" name="B0" />
             <blockpin signalname="B(1)" name="B1" />
@@ -226,121 +336,8 @@
             <blockpin signalname="XLXN_19" name="S5" />
             <blockpin signalname="XLXN_20" name="S6" />
         </block>
-        <block symbolname="MultBox" name="XLXI_154">
-            <blockpin signalname="A(0)" name="A0" />
-            <blockpin signalname="A(1)" name="A1" />
-            <blockpin signalname="A(2)" name="A2" />
-            <blockpin signalname="A(3)" name="A3" />
-            <blockpin signalname="A(4)" name="A4" />
-            <blockpin signalname="A(5)" name="A5" />
-            <blockpin signalname="A(6)" name="A6" />
-            <blockpin signalname="A(7)" name="A7" />
-            <blockpin signalname="S7" name="HA0" />
-            <blockpin signalname="S8" name="FA0" />
-            <blockpin signalname="S9" name="FA1" />
-            <blockpin signalname="S10" name="FA2" />
-            <blockpin signalname="S11" name="FA3" />
-            <blockpin signalname="S12" name="FA4" />
-            <blockpin signalname="S13" name="FA5" />
-            <blockpin signalname="CO1" name="FA6" />
-            <blockpin signalname="CO2" name="CO8" />
-            <blockpin signalname="S20" name="S6" />
-            <blockpin signalname="S19" name="S5" />
-            <blockpin signalname="S18" name="S4" />
-            <blockpin signalname="S17" name="S3" />
-            <blockpin signalname="S16" name="S2" />
-            <blockpin signalname="S15" name="S1" />
-            <blockpin signalname="S14" name="S0" />
-            <blockpin signalname="XLXN_255" name="Z" />
-            <blockpin signalname="B(5)" name="B" />
-        </block>
-        <block symbolname="MultBox" name="XLXI_155">
-            <blockpin signalname="A(0)" name="A0" />
-            <blockpin signalname="A(1)" name="A1" />
-            <blockpin signalname="A(2)" name="A2" />
-            <blockpin signalname="A(3)" name="A3" />
-            <blockpin signalname="A(4)" name="A4" />
-            <blockpin signalname="A(5)" name="A5" />
-            <blockpin signalname="A(6)" name="A6" />
-            <blockpin signalname="A(7)" name="A7" />
-            <blockpin signalname="S14" name="HA0" />
-            <blockpin signalname="S15" name="FA0" />
-            <blockpin signalname="S16" name="FA1" />
-            <blockpin signalname="S17" name="FA2" />
-            <blockpin signalname="S18" name="FA3" />
-            <blockpin signalname="S19" name="FA4" />
-            <blockpin signalname="S20" name="FA5" />
-            <blockpin signalname="CO2" name="FA6" />
-            <blockpin signalname="CO3" name="CO8" />
-            <blockpin signalname="S27" name="S6" />
-            <blockpin signalname="S26" name="S5" />
-            <blockpin signalname="S25" name="S4" />
-            <blockpin signalname="S24" name="S3" />
-            <blockpin signalname="S23" name="S2" />
-            <blockpin signalname="S22" name="S1" />
-            <blockpin signalname="S21" name="S0" />
-            <blockpin signalname="Z(5)" name="Z" />
-            <blockpin signalname="B(6)" name="B" />
-        </block>
-        <block symbolname="MultBox" name="XLXI_156">
-            <blockpin signalname="A(0)" name="A0" />
-            <blockpin signalname="A(1)" name="A1" />
-            <blockpin signalname="A(2)" name="A2" />
-            <blockpin signalname="A(3)" name="A3" />
-            <blockpin signalname="A(4)" name="A4" />
-            <blockpin signalname="A(5)" name="A5" />
-            <blockpin signalname="A(6)" name="A6" />
-            <blockpin signalname="A(7)" name="A7" />
-            <blockpin signalname="S21" name="HA0" />
-            <blockpin signalname="S22" name="FA0" />
-            <blockpin signalname="S23" name="FA1" />
-            <blockpin signalname="S24" name="FA2" />
-            <blockpin signalname="S25" name="FA3" />
-            <blockpin signalname="S26" name="FA4" />
-            <blockpin signalname="S27" name="FA5" />
-            <blockpin signalname="CO3" name="FA6" />
-            <blockpin signalname="CO4" name="CO8" />
-            <blockpin signalname="S34" name="S6" />
-            <blockpin signalname="S33" name="S5" />
-            <blockpin signalname="S32" name="S4" />
-            <blockpin signalname="S31" name="S3" />
-            <blockpin signalname="S30" name="S2" />
-            <blockpin signalname="S29" name="S1" />
-            <blockpin signalname="S28" name="S0" />
-            <blockpin signalname="Z(6)" name="Z" />
-            <blockpin signalname="B(7)" name="B" />
-        </block>
-        <block symbolname="MultBox" name="XLXI_119">
-            <blockpin signalname="A(0)" name="A0" />
-            <blockpin signalname="A(1)" name="A1" />
-            <blockpin signalname="A(2)" name="A2" />
-            <blockpin signalname="A(3)" name="A3" />
-            <blockpin signalname="A(4)" name="A4" />
-            <blockpin signalname="A(5)" name="A5" />
-            <blockpin signalname="A(6)" name="A6" />
-            <blockpin signalname="A(7)" name="A7" />
-            <blockpin signalname="S28" name="HA0" />
-            <blockpin signalname="S29" name="FA0" />
-            <blockpin signalname="S30" name="FA1" />
-            <blockpin signalname="S31" name="FA2" />
-            <blockpin signalname="S32" name="FA3" />
-            <blockpin signalname="S33" name="FA4" />
-            <blockpin signalname="S34" name="FA5" />
-            <blockpin signalname="CO4" name="FA6" />
-            <blockpin signalname="Z(15)" name="CO8" />
-            <blockpin signalname="Z(14)" name="S6" />
-            <blockpin signalname="Z(13)" name="S5" />
-            <blockpin signalname="Z(12)" name="S4" />
-            <blockpin signalname="Z(11)" name="S3" />
-            <blockpin signalname="Z(10)" name="S2" />
-            <blockpin signalname="Z(9)" name="S1" />
-            <blockpin signalname="Z(8)" name="S0" />
-            <blockpin signalname="Z(7)" name="Z" />
-            <blockpin signalname="B(4)" name="B" />
-        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <iomarker fontsize="28" x="3376" y="160" name="A(0:7)" orien="R270" />
         <instance x="80" y="1024" name="XLXI_110" orien="R90">
         </instance>
         <branch name="A(0)">
@@ -375,10 +372,6 @@
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="992" type="branch" />
             <wire x2="624" y1="992" y2="1024" x1="624" />
         </branch>
-        <branch name="A(0)">
-            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2240" y="992" type="branch" />
-            <wire x2="2240" y1="992" y2="1024" x1="2240" />
-        </branch>
         <branch name="A(1)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2176" y="992" type="branch" />
             <wire x2="2176" y1="992" y2="1024" x1="2176" />
@@ -407,123 +400,102 @@
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1792" y="992" type="branch" />
             <wire x2="1792" y1="992" y2="1024" x1="1792" />
         </branch>
-        <branch name="B(2)">
-            <wire x2="208" y1="1408" y2="1440" x1="208" />
-        </branch>
-        <branch name="Z(0:15)">
-            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="2400" type="branch" />
-            <wire x2="2096" y1="2400" y2="2528" x1="2096" />
-        </branch>
-        <iomarker fontsize="28" x="2096" y="2528" name="Z(0:15)" orien="R90" />
-        <instance x="1680" y="352" name="XLXI_157" orien="R90">
-        </instance>
         <branch name="A(0)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2288" y="304" type="branch" />
-            <wire x2="2288" y1="304" y2="352" x1="2288" />
+            <wire x2="2288" y1="304" y2="368" x1="2288" />
         </branch>
         <branch name="B(0)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2224" y="304" type="branch" />
-            <wire x2="2224" y1="304" y2="352" x1="2224" />
+            <wire x2="2224" y1="304" y2="368" x1="2224" />
         </branch>
         <branch name="B(1)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="304" type="branch" />
-            <wire x2="2160" y1="304" y2="352" x1="2160" />
+            <wire x2="2160" y1="304" y2="368" x1="2160" />
         </branch>
         <branch name="A(2)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="304" type="branch" />
-            <wire x2="2096" y1="304" y2="352" x1="2096" />
+            <wire x2="2096" y1="304" y2="368" x1="2096" />
         </branch>
         <branch name="A(1)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2032" y="304" type="branch" />
-            <wire x2="2032" y1="304" y2="352" x1="2032" />
+            <wire x2="2032" y1="304" y2="368" x1="2032" />
         </branch>
         <branch name="A(3)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1968" y="304" type="branch" />
-            <wire x2="1968" y1="304" y2="352" x1="1968" />
+            <wire x2="1968" y1="304" y2="368" x1="1968" />
         </branch>
         <branch name="A(4)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="304" type="branch" />
-            <wire x2="1904" y1="304" y2="352" x1="1904" />
+            <wire x2="1904" y1="304" y2="368" x1="1904" />
         </branch>
         <branch name="A(5)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1840" y="304" type="branch" />
-            <wire x2="1840" y1="304" y2="352" x1="1840" />
+            <wire x2="1840" y1="304" y2="368" x1="1840" />
         </branch>
         <branch name="A(6)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1776" y="304" type="branch" />
-            <wire x2="1776" y1="304" y2="352" x1="1776" />
+            <wire x2="1776" y1="304" y2="368" x1="1776" />
         </branch>
         <branch name="A(7)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1712" y="304" type="branch" />
-            <wire x2="1712" y1="304" y2="352" x1="1712" />
+            <wire x2="1712" y1="304" y2="368" x1="1712" />
         </branch>
         <branch name="Z(0)">
-            <wire x2="1648" y1="736" y2="768" x1="1648" />
+            <wire x2="1648" y1="752" y2="768" x1="1648" />
         </branch>
         <branch name="Z(1)">
-            <wire x2="2224" y1="736" y2="784" x1="2224" />
+            <wire x2="2224" y1="752" y2="784" x1="2224" />
         </branch>
         <branch name="XLXN_13">
             <wire x2="112" y1="880" y2="1024" x1="112" />
             <wire x2="2160" y1="880" y2="880" x1="112" />
-            <wire x2="2160" y1="736" y2="880" x1="2160" />
+            <wire x2="2160" y1="752" y2="880" x1="2160" />
         </branch>
         <branch name="XLXN_14">
             <wire x2="560" y1="864" y2="1024" x1="560" />
             <wire x2="1584" y1="864" y2="864" x1="560" />
-            <wire x2="1584" y1="736" y2="864" x1="1584" />
+            <wire x2="1584" y1="752" y2="864" x1="1584" />
         </branch>
         <branch name="XLXN_15">
             <wire x2="496" y1="848" y2="1024" x1="496" />
             <wire x2="1520" y1="848" y2="848" x1="496" />
-            <wire x2="1520" y1="736" y2="848" x1="1520" />
+            <wire x2="1520" y1="752" y2="848" x1="1520" />
         </branch>
         <branch name="XLXN_16">
             <wire x2="432" y1="832" y2="1024" x1="432" />
             <wire x2="1456" y1="832" y2="832" x1="432" />
-            <wire x2="1456" y1="736" y2="832" x1="1456" />
+            <wire x2="1456" y1="752" y2="832" x1="1456" />
         </branch>
         <branch name="XLXN_17">
             <wire x2="368" y1="816" y2="1024" x1="368" />
             <wire x2="1392" y1="816" y2="816" x1="368" />
-            <wire x2="1392" y1="736" y2="816" x1="1392" />
+            <wire x2="1392" y1="752" y2="816" x1="1392" />
         </branch>
         <branch name="XLXN_18">
             <wire x2="304" y1="800" y2="1024" x1="304" />
             <wire x2="1328" y1="800" y2="800" x1="304" />
-            <wire x2="1328" y1="736" y2="800" x1="1328" />
+            <wire x2="1328" y1="752" y2="800" x1="1328" />
         </branch>
         <branch name="XLXN_19">
             <wire x2="240" y1="784" y2="1024" x1="240" />
             <wire x2="1264" y1="784" y2="784" x1="240" />
-            <wire x2="1264" y1="736" y2="784" x1="1264" />
+            <wire x2="1264" y1="752" y2="784" x1="1264" />
         </branch>
         <branch name="XLXN_20">
             <wire x2="1200" y1="752" y2="752" x1="176" />
             <wire x2="176" y1="752" y2="1024" x1="176" />
-            <wire x2="1200" y1="736" y2="752" x1="1200" />
         </branch>
         <branch name="Z(2)">
             <wire x2="304" y1="1408" y2="1440" x1="304" />
         </branch>
         <instance x="1248" y="1024" name="XLXI_118" orien="R90">
         </instance>
-        <branch name="B(3)">
-            <wire x2="1376" y1="1408" y2="1440" x1="1376" />
-        </branch>
         <branch name="CO0">
             <wire x2="1072" y1="1408" y2="1456" x1="1072" />
-            <wire x2="1184" y1="1456" y2="1456" x1="1072" />
-            <wire x2="1280" y1="992" y2="992" x1="1184" />
-            <wire x2="1280" y1="992" y2="1024" x1="1280" />
-            <wire x2="1184" y1="992" y2="1456" x1="1184" />
-        </branch>
-        <branch name="CO1">
-            <wire x2="2240" y1="1408" y2="1456" x1="2240" />
-            <wire x2="2352" y1="1456" y2="1456" x1="2240" />
-            <wire x2="2432" y1="960" y2="960" x1="2352" />
-            <wire x2="2432" y1="960" y2="1024" x1="2432" />
-            <wire x2="2352" y1="960" y2="1456" x1="2352" />
+            <wire x2="1136" y1="1456" y2="1456" x1="1072" />
+            <wire x2="1136" y1="944" y2="1456" x1="1136" />
+            <wire x2="1280" y1="944" y2="944" x1="1136" />
+            <wire x2="1280" y1="944" y2="1024" x1="1280" />
         </branch>
         <branch name="S0">
             <wire x2="400" y1="1408" y2="1456" x1="400" />
@@ -601,9 +573,6 @@
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2944" y="992" type="branch" />
             <wire x2="2944" y1="992" y2="1024" x1="2944" />
         </branch>
-        <branch name="B(5)">
-            <wire x2="2528" y1="1408" y2="1456" x1="2528" />
-        </branch>
         <branch name="S14">
             <wire x2="2720" y1="1408" y2="1456" x1="2720" />
         </branch>
@@ -658,9 +627,6 @@
         <branch name="A(7)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="1728" type="branch" />
             <wire x2="624" y1="1728" y2="1760" x1="624" />
-        </branch>
-        <branch name="B(6)">
-            <wire x2="208" y1="2144" y2="2192" x1="208" />
         </branch>
         <branch name="S21">
             <wire x2="400" y1="2144" y2="2192" x1="400" />
@@ -717,9 +683,6 @@
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1792" y="1728" type="branch" />
             <wire x2="1792" y1="1728" y2="1760" x1="1792" />
         </branch>
-        <branch name="B(7)">
-            <wire x2="1376" y1="2144" y2="2208" x1="1376" />
-        </branch>
         <branch name="S28">
             <wire x2="1568" y1="2144" y2="2192" x1="1568" />
         </branch>
@@ -741,18 +704,8 @@
         <branch name="S34">
             <wire x2="2144" y1="2144" y2="2192" x1="2144" />
         </branch>
-        <iomarker fontsize="28" x="3392" y="192" name="B(0:7)" orien="R0" />
-        <branch name="B(0:7)">
-            <wire x2="3392" y1="192" y2="192" x1="3328" />
-        </branch>
-        <branch name="A(0:7)">
-            <wire x2="3376" y1="160" y2="224" x1="3376" />
-        </branch>
         <instance x="2400" y="1760" name="XLXI_119" orien="R90">
         </instance>
-        <branch name="B(4)">
-            <wire x2="2528" y1="2144" y2="2192" x1="2528" />
-        </branch>
         <branch name="A(0)">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="3392" y="1728" type="branch" />
             <wire x2="3392" y1="1728" y2="1760" x1="3392" />
@@ -807,23 +760,23 @@
             <wire x2="3296" y1="2144" y2="2192" x1="3296" />
         </branch>
         <branch name="CO2">
-            <wire x2="112" y1="1616" y2="1760" x1="112" />
             <wire x2="3392" y1="1616" y2="1616" x1="112" />
+            <wire x2="112" y1="1616" y2="1760" x1="112" />
             <wire x2="3392" y1="1408" y2="1616" x1="3392" />
         </branch>
         <branch name="CO3">
             <wire x2="1072" y1="2144" y2="2192" x1="1072" />
-            <wire x2="1200" y1="2192" y2="2192" x1="1072" />
-            <wire x2="1280" y1="1696" y2="1696" x1="1200" />
-            <wire x2="1280" y1="1696" y2="1760" x1="1280" />
-            <wire x2="1200" y1="1696" y2="2192" x1="1200" />
+            <wire x2="1152" y1="2192" y2="2192" x1="1072" />
+            <wire x2="1280" y1="1664" y2="1664" x1="1152" />
+            <wire x2="1280" y1="1664" y2="1760" x1="1280" />
+            <wire x2="1152" y1="1664" y2="2192" x1="1152" />
         </branch>
         <branch name="CO4">
             <wire x2="2240" y1="2144" y2="2192" x1="2240" />
-            <wire x2="2352" y1="2192" y2="2192" x1="2240" />
-            <wire x2="2432" y1="1696" y2="1696" x1="2352" />
-            <wire x2="2432" y1="1696" y2="1760" x1="2432" />
-            <wire x2="2352" y1="1696" y2="2192" x1="2352" />
+            <wire x2="2304" y1="2192" y2="2192" x1="2240" />
+            <wire x2="2432" y1="1664" y2="1664" x1="2304" />
+            <wire x2="2432" y1="1664" y2="1760" x1="2432" />
+            <wire x2="2304" y1="1664" y2="2192" x1="2304" />
         </branch>
         <branch name="Z(15)">
             <wire x2="3392" y1="2144" y2="2192" x1="3392" />
@@ -831,7 +784,7 @@
         <branch name="Z(3)">
             <wire x2="1472" y1="1408" y2="1440" x1="1472" />
         </branch>
-        <branch name="XLXN_255">
+        <branch name="Z(4)">
             <wire x2="2624" y1="1408" y2="1440" x1="2624" />
         </branch>
         <branch name="Z(5)">
@@ -983,5 +936,55 @@
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2496" y="1728" type="branch" />
             <wire x2="2496" y1="1728" y2="1760" x1="2496" />
         </branch>
+        <branch name="B(2)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="48" y="992" type="branch" />
+            <wire x2="48" y1="992" y2="1024" x1="48" />
+        </branch>
+        <branch name="B(3)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1216" y="1008" type="branch" />
+            <wire x2="1216" y1="1008" y2="1024" x1="1216" />
+        </branch>
+        <branch name="B(4)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2368" y="992" type="branch" />
+            <wire x2="2368" y1="992" y2="1024" x1="2368" />
+        </branch>
+        <branch name="A(0)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2240" y="992" type="branch" />
+            <wire x2="2240" y1="992" y2="1024" x1="2240" />
+        </branch>
+        <branch name="XLXN_27">
+            <wire x2="2240" y1="1408" y2="1488" x1="2240" />
+            <wire x2="2304" y1="1488" y2="1488" x1="2240" />
+            <wire x2="2304" y1="944" y2="1488" x1="2304" />
+            <wire x2="2432" y1="944" y2="944" x1="2304" />
+            <wire x2="2432" y1="944" y2="1024" x1="2432" />
+        </branch>
+        <branch name="B(5)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="48" y="1728" type="branch" />
+            <wire x2="48" y1="1728" y2="1760" x1="48" />
+        </branch>
+        <branch name="B(6)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1216" y="1728" type="branch" />
+            <wire x2="1216" y1="1728" y2="1760" x1="1216" />
+        </branch>
+        <branch name="B(7)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2368" y="1728" type="branch" />
+            <wire x2="2368" y1="1728" y2="1760" x1="2368" />
+        </branch>
+        <instance x="1680" y="368" name="XLXI_158" orien="R90">
+        </instance>
+        <branch name="A(7:0)">
+            <wire x2="3392" y1="160" y2="224" x1="3392" />
+        </branch>
+        <iomarker fontsize="28" x="3392" y="160" name="A(7:0)" orien="R270" />
+        <branch name="B(7:0)">
+            <wire x2="3312" y1="160" y2="224" x1="3312" />
+        </branch>
+        <iomarker fontsize="28" x="3312" y="160" name="B(7:0)" orien="R270" />
+        <branch name="Z(15:0)">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="2400" type="branch" />
+            <wire x2="2080" y1="2400" y2="2480" x1="2080" />
+        </branch>
+        <iomarker fontsize="28" x="2080" y="2480" name="Z(15:0)" orien="R90" />
     </sheet>
 </drawing>
